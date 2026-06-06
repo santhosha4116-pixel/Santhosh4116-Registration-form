@@ -1,0 +1,75 @@
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #EDDD53;
+}
+.container{
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.form{
+padding: 10px;
+}
+.input , .input2 , .input3{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.input input , .input2 input , .input3 input {
+  padding: 5px;
+  border-radius: 5px;
+  border: black 2px solid;
+}
+.input input , .input2 input , .input3 input:focus{
+  outline: 0;
+
+}
+.invaild input{
+  border: red 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+   
+}
+.vaild input{
+   border: green 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+#button:disabled{
+  background-color: #EDDD53;
+  color: black;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: not-allowed; 
+  opacity: 0.5;
+}
+#button:not(:disabled){
+   background-color: #EDDD53;
+  color: black;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+#button:not(:disabled):hover{
+   background-color: #EDDD53;
+  color: black;
+  border: 2px black solid;
+}
+#usererror , #gmailerror , #Passworderror {
+    color: red;
+    font-size: 12px;
+}
+
+
